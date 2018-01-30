@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    tools:context="com.example.ehk.hospital.MainActivity">
+
+    <TextView
+        android:text="예약 날짜를 선택하세요."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/search"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner">
+
+    </DatePicker>
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_round_btn"
+        android:layout_marginTop="10dp"
+        android:text="검색"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>
+

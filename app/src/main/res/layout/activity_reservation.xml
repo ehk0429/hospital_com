@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TextView
+        android:text="예약 시간을 선택하세요."
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+         />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TableRow android:layout_marginBottom="20dp" android:layout_marginTop="20dp">
+       <TextView
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/textView_H"
+            android:layout_span="3"
+            android:layout_gravity="right"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_M"
+            android:layout_span="3"
+            android:layout_gravity="left"
+            android:background="@color/colorPrimaryDark"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="50"
+            android:id="@+id/button10"
+            android:onClick="topLeft"
+            android:background="@drawable/selector_round_topleft"
+            android:layout_span="2"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            />
+        <Button
+            android:id="@+id/button11"
+            android:background="@drawable/selector_side_mbtn"
+            android:text="55"
+            />
+        <Button
+            android:text="0"
+            android:id="@+id/button0"
+            android:background="@drawable/selector_right_mbtn"
+            />
+
+        <Button
+            android:text="5"
+            android:id="@+id/button1"
+            android:onClick="topRight"
+            android:layout_span="2"
+            android:layout_marginRight="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_round_topright"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:onClick="topLeft"
+            android:id="@+id/topLeftBtn"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_btn"
+            />
+
+        <Button
+            android:text="10"
+            android:id="@+id/btn10"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="11"
+            android:id="@+id/btn11"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="12"
+            android:id="@+id/btn12"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="1"
+            android:id="@+id/btn1"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/topRightBtn"
+            android:onClick="topRight"
+            android:layout_marginRight="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_btn"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:text="45"
+            android:id="@+id/button9"
+            android:background="@drawable/selector_topbottom_mbtn"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            />
+
+        <Button
+            android:text="9"
+            android:id="@+id/btn9"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="예약"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+
+            android:onClick="reserve"
+            android:id="@+id/reservationBtn"
+            android:layout_span="2"
+            android:background="@color/logo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:text="2"
+            android:id="@+id/btn2"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="10"
+            android:id="@+id/button2"
+            android:layout_marginRight="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_topbottom_mbtn"
+             />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:text="40"
+            android:id="@+id/button8"
+            android:background="@drawable/selector_bottom_mbtn"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            />
+
+        <Button
+            android:text="8"
+            android:id="@+id/btn8"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="확정"
+            android:onClick="reserve"
+            android:id="@+id/reserveBtn2"
+            android:layout_span="2"
+            android:background="@color/logo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:text="3"
+            android:id="@+id/btn3"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="15"
+            android:id="@+id/button3"
+            android:layout_marginRight="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_bottom_mbtn"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/bottomLeftBtn"
+            android:onClick="bottomLeft"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_btn"
+            />
+
+        <Button
+            android:text="7"
+            android:id="@+id/btn7"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="6"
+            android:id="@+id/btn6"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="5"
+            android:id="@+id/btn5"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:text="4"
+            android:id="@+id/btn4"
+            android:background="@drawable/selector_hbtn"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bottomRightBtn"
+            android:onClick="bottomRight"
+            android:layout_marginRight="@android:dimen/app_icon_size"
+            android:background="@drawable/selector_btn"
+            />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button7"
+            android:onClick="bottomLeft"
+            android:layout_marginLeft="@android:dimen/app_icon_size"
+            android:layout_span="2"
+            android:background="@drawable/selector_round_bottomleft"
+            android:text="35"
+            />
+
+        <Button
+            android:id="@+id/button6"
+            android:background="@drawable/selector_side_mbtn"
+            android:text="30"
+            />
+
+        <Button
+            android:text="25"
+            android:id="@+id/button5"
+            android:background="@drawable/selector_right_mbtn"
+            />
+
+        <Button
+            android:text="20"
+            android:id="@+id/button4"
+            android:onClick="bottomRight"
+            android:layout_marginRight="@android:dimen/app_icon_size"
+            android:layout_span="2"
+            android:background="@drawable/selector_round_bottomright"
+            />
+    </TableRow>
+
+</TableLayout>
